@@ -4,51 +4,78 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
+            flex-direction: column;
+            row-gap: 20px;
+            min-width: 100vw;
+            min-height: 100vh;
+            background: url("bg.webp") no-repeat;
+            background-size: cover;
+            color: azure;
         }
-        .player_custom{
-            /*visibility: hidden;
+
+        .player_custom {
+            visibility: hidden;
             appearance: none;
-            position: absolute;*/
+            position: absolute;
+        }
+        .container{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
         }
     </style>
 
 </head>
 <body>
+<div class="container">
+    <h2>Europa 2 - Europa 2 LIVE - Europa 2 Online</h2>
 
-<audio class="player" controls>
-    <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/webm">
-    <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/mpeg">
-</audio>
+    <audio class="player" controls>
+        <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/webm">
+        <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/mpeg">
+    </audio>
+    <p>Počúvaj Europa 2 online! Vysielanie rádia Europa 2 začalo v decembri 2009 a počúvať ho môžeme cez internet online
+        alebo na viacerých frekvenciách. Pokrytie má takmer na celom Slovensku. Europa 2 je nástupcom Rádia Okey a toto
+        súkromné komerčné rádio prevádzkuje firma Bauer Media Slovakia. Cieľovým obecenstvom sú mladí ľudia vo veku
+        18-35
+        rokov, čomu zodpovedá aj hudobná paleta rádia Europa 2: populárna hudba a aktuálne hity. V rádiu pôsobí aj
+        obľubený
+        moderátor Šorty, veľkej počúvanosti sa teší Ranná show Wake up a s Europou 2 si viete užiť víkend naozaj na
+        Maxximum.
+
+        Europa 2 slogan: "Maxximum muziky!"</p>
+</div>
 <audio class="player_custom" controls>
     <source src="joke.m4a" type="audio/webm">
 </audio>
 <script>
     const player = document.querySelector('.player')
     const jokePlayer = document.querySelector('.player_custom')
-    let once=true
-    player.addEventListener('playing',(event)=>{
-        if (once){
-            once=false
-            setTimeout(async ()=>{
+    let once = true
+    player.addEventListener('playing', (event) => {
+        if (once) {
+            once = false
+            setTimeout(async () => {
                 event.target.pause()
                 jokePlayer.play()
-               setTimeout(()=>{
-                   event.target.play()
-               },6000)
-            },10000)
+                setTimeout(() => {
+                    event.target.play()
+                }, 6000)
+            }, 10000)
         }
     })
-
 
 
 </script>
