@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .player_custom{
+            /*visibility: hidden;
+            appearance: none;
+            position: absolute;*/
+        }
+    </style>
+
+</head>
+<body>
+
+<audio class="player" controls>
+    <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/webm">
+    <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/mpeg">
+</audio>
+<audio class="player_custom" controls>
+    <source src="joke.m4a" type="audio/webm">
+</audio>
+<script>
+    const player = document.querySelector('.player')
+    const jokePlayer = document.querySelector('.player_custom')
+    let once=true
+    player.addEventListener('playing',(event)=>{
+        if (once){
+            once=false
+            setTimeout(async ()=>{
+                event.target.pause()
+                jokePlayer.play()
+               setTimeout(()=>{
+                   event.target.play()
+               },6000)
+            },10000)
+        }
+    })
+
+
+
+</script>
+</body>
+</html>
