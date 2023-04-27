@@ -27,7 +27,8 @@
             appearance: none;
             position: absolute;
         }
-        .container{
+
+        .container {
             padding: 10px;
             display: flex;
             justify-content: center;
@@ -35,17 +36,493 @@
             flex-direction: column;
             row-gap: 20px;
         }
+
+        .nav__container {
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(5%, #f1f1f1), color-stop(35%, #d3d3d3), color-stop(50%, #d4d4d4), color-stop(65%, #d3d3d3), color-stop(95%, #f1f1f1));
+            background-image: linear-gradient(90deg, #f1f1f1 5%, #d3d3d3 35%, #d4d4d4 50%, #d3d3d3 65%, #f1f1f1 95%);
+            width: 100%;
+            display: block;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+            margin-bottom: 0;
+        }
+
+        .nav {
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .container_ {
+            max-width: 1440px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .nav__link--main {
+            padding: 0.9375rem 1.875rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            min-height: 50px;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav__link {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: 600;
+        }
+        h3{
+            text-shadow:1px 1px 1px #fff;
+        }
+        /* Start  styling the page */
+        .container-audio {
+            width: 66%;
+            height: auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #eee;
+            color: #444;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        audio {
+            width:100%;
+        }
+        audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+            margin: 0;
+        }
+        .container-audio .colum1 {
+            width: 23px;
+            height: 5em;
+            border-radius: 5px;
+            margin: 0 10px 0 0;
+            display: inline-block;
+            position: relative;
+        }
+        .container-audio .colum1:last-child {
+            margin: 0;
+        }
+        .container-audio .colum1 .row {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background: linear-gradient(to up, #7700aa, #8800ff);
+            position: absolute;
+            -webkit-animation: Rofa 10s infinite ease-in-out;
+            animation: Rofa 10s infinite ease-in-out;
+            bottom: 0;
+        }
+        .container-audio .colum1:nth-of-type(1) .row {
+            -webkit-animation-delay: 3.99s;
+            animation-delay: 3.99s;
+        }
+        .container-audio .colum1:nth-of-type(2) .row {
+            -webkit-animation-delay: 3.80s;
+            animation-delay: 3.80s;
+        }
+        .container-audio .colum1:nth-of-type(3) .row {
+            -webkit-animation-delay: 3.70s;
+            animation-delay: 3.70s;
+        }
+        .container-audio .colum1:nth-of-type(4) .row {
+            -webkit-animation-delay: 3.60s;
+            animation-delay: 3.60s;
+        }
+        .container-audio .colum1:nth-of-type(5) .row {
+            -webkit-animation-delay: 3.50s;
+            animation-delay: 3.50s;
+        }
+        .container-audio .colum1:nth-of-type(6) .row {
+            -webkit-animation-delay: 3.40s;
+            animation-delay: 3.40s;
+        }
+        .container-audio .colum1:nth-of-type(7) .row {
+            -webkit-animation-delay: 3.30s;
+            animation-delay: 3.30s;
+        }
+        .container-audio .colum1:nth-of-type(8) .row {
+            -webkit-animation-delay: 3.20s;
+            animation-delay: 3.20s;
+        }
+        .container-audio .colum1:nth-of-type(9) .row {
+            -webkit-animation-delay: 3.10s;
+            animation-delay: 3.10s;
+        }
+        .container-audio .colum1:nth-of-type(10) .row {
+            -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+        }
+        .container-audio .colum1:nth-of-type(11) .row {
+            -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+        }
+        .container-audio .colum1:nth-of-type(12) .row {
+            -webkit-animation-delay: 2.10s;
+            animation-delay: 2.10s;
+        }
+        .container-audio .colum1:nth-of-type(13) .row {
+            -webkit-animation-delay: 2.20s;
+            animation-delay: 2.20s;
+        }
+        .container-audio .colum1:nth-of-type(14) .row {
+            -webkit-animation-delay: 1.30s;
+            animation-delay: 1.30s;
+        }
+        .container-audio .colum1:nth-of-type(15) .row {
+            -webkit-animation-delay: 1.40s;
+            animation-delay: 1.40s;
+        }
+        .container-audio .colum1:nth-of-type(16) .row {
+            -webkit-animation-delay: 1.50s;
+            animation-delay: 1.50s;
+        }
+        .container-audio .colum1:nth-of-type(17) .row {
+            -webkit-animation-delay: 1.60s;
+            animation-delay: 1.60s;
+        }
+        .container-audio .colum1:nth-of-type(18) .row {
+            -webkit-animation-delay: 1.70s;
+            animation-delay: 1.70s;
+        }
+        .container-audio .colum1:nth-of-type(19) .row {
+            -webkit-animation-delay: 1.80s;
+            animation-delay: 1.80s;
+        }
+        .container-audio .colum1:nth-of-type(20) .row {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+
+        @-webkit-keyframes Rofa {
+            0% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+                background-color: yellow;
+            }
+
+            5% {
+                height: 100%;
+                -webkit-transform: translatey(15px);
+                transform: translatey(15px);
+                background-color: fuchsia;
+            }
+            10% {
+                height: 90%;
+                transform: translatey(0);
+                -webkit-transform: translatey(0);
+                background-color: bisque;
+            }
+
+            15% {
+                height: 80%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            20% {
+                height: 70%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+                background-color: cornflowerblue;
+            }
+            25% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+                background-color: cornflowerblue;
+            }
+            30% {
+                height: 70%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+                background-color: cornflowerblue;
+            }
+            35% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            40% {
+                height: 60%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            45% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            50% {
+                height: 50%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            55% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            60% {
+                height: 40%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            65% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            70% {
+                height: 30%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            75% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            80% {
+                height: 20%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            85% {
+                height: 0%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            90% {
+                height: 10%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            95% {
+                height: 5%;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+            100% {
+                height: 0;
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+
+                background-color: cornflowerblue;
+            }
+        }
+        p{
+            width: 66%;
+        }
+        .active{
+            background: #333333;
+            color: #ffffff;
+        }
+
+
+
     </style>
 
 </head>
 <body>
-<div class="container">
+<header class="header">
+
+    <nav class="nav nav__container">
+        <div class="container_">
+            <div class="row">
+
+                <!--Logo-->
+                <a title="Úvodná stránka rtvs.sk" href="https://www.rtvs.sk/" class="logo">
+                    <img src="https://www.rtvs.sk/media/images/rtvs-logo.svg" alt="Rozhlas a televízia Slovenska">
+                </a>
+
+                <!--Search-->
+
+                <!--Main Nav-->
+                <div class="nav__main">
+                    <ul class="nav">
+
+
+                        <li data-id="2" class="nav__item nav__item--main  televizia">
+                            <a href="https://www.rtvs.sk/televizia" class="nav__link nav__link--main" title="Televízia">Televízia</a>
+                        </li>
+
+
+                        <li data-id="3" class="nav__item nav__item--mainradio">
+                            <a href="https://www.rtvs.sk/radio" class="nav__link nav__link--main active"
+                               title="Rádio">Rádio</a>
+                        </li>
+
+
+                        <li data-id="774" class="nav__item nav__item--main ">
+                            <a href="https://www.rtvs.sk/archiv" class="nav__link nav__link--main"
+                               title="Archív">Archív</a>
+                        </li>
+
+
+                        <li data-id="5" class="nav__item nav__item--main  program">
+                            <a href="https://www.rtvs.sk/program" class="nav__link nav__link--main" title="Program">Program</a>
+                        </li>
+
+
+                        <li data-id="769" class="nav__item nav__item--main ">
+                            <a href="https://www.rtvs.sk/novinky" class="nav__link nav__link--main" title="Novinky">Novinky</a>
+                        </li>
+
+
+                        <li data-id="999" class="nav__item nav__item--main protect d-none">
+                            <a href="/prot/tq3DTSul" class="nav__link nav__link--main" title="Subsite">Subsite</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+</header>
+<div class="container_">
     <h2>Europa 2 - Europa 2 LIVE - Europa 2 Online</h2>
 
-    <audio class="player" controls>
-        <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/webm">
-        <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/mpeg">
-    </audio>
+   <div class="container-audio">
+       <audio class="player" controls>
+           <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/webm">
+           <source src="https://stream.bauermedia.sk/europa2.mp3" type="audio/mpeg">
+       </audio>
+   </div>
+    <div class="container-audio">
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+    </div>
     <p>Počúvaj Europa 2 online! Vysielanie rádia Europa 2 začalo v decembri 2009 a počúvať ho môžeme cez internet online
         alebo na viacerých frekvenciách. Pokrytie má takmer na celom Slovensku. Europa 2 je nástupcom Rádia Okey a toto
         súkromné komerčné rádio prevádzkuje firma Bauer Media Slovakia. Cieľovým obecenstvom sú mladí ľudia vo veku
